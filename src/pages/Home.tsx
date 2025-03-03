@@ -12,20 +12,12 @@ const Home: React.FC = () => {
       <Hero />
       <QuickLinkScrollView />
       <div className="pt-16">
-        <ProductGrid
-          title="Featured Products"
-          subtitle="Explore our top-selling products"
-          filter={(product) => !!(product.isFeatured || product.isNew)}
-        />
-        <FeaturedSection />
+        <ProductGrid/>
         <TrendingProducts />
-        <SmartWatchSection />
         <QuickLinkScrollView />
-        <ProductGrid
-          title="New Arrivals"
-          subtitle="Check out our latest products"
-          filter={(product) => !!product.isNew}
-        />
+        <ProductGrid/>
+        <FeaturedSection />
+        <SmartWatchSection />
       </div>
     </>
   );
