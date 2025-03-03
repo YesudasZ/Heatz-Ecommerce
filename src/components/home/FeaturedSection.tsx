@@ -1,34 +1,33 @@
 import React from 'react';
-import Button from '../common/Button';
 
-const FeaturedSection: React.FC = () => {
+interface FeaturedSectionProps {
+  leftImage: string;
+  rightImage: string;
+}
+
+const FeaturedSection: React.FC<FeaturedSectionProps> = ({ leftImage, rightImage }) => {
   return (
-    <section className="py-12 bg-heatz-gray">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* ZK2G! Section */}
-          <div className="relative rounded-2xl overflow-hidden h-80 bg-gradient-to-br from-purple-800 to-indigo-900 group">
-            <div className="absolute inset-0 bg-[url('/src/assets/images/banners/zk2g-bg.png')] bg-cover bg-center mix-blend-overlay opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
-            
-            <div className="relative h-full flex flex-col justify-center items-center text-center p-8">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">ZK2G!</h2>
-              <p className="text-white/80 mb-6">Experience the next generation of gaming audio.</p>
-              <Button>Learn More</Button>
-            </div>
+    <section className=" bg-heatz-dark">
+      <div className="container max-w-[65%] mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div className="overflow-hidden shadow-lg">
+            <img 
+              src={leftImage} 
+              alt="Featured promotion" 
+              className="w-full h-auto object-cover"
+            />
           </div>
-          
-          {/* LED Section */}
-          <div className="relative rounded-2xl overflow-hidden h-80 bg-gradient-to-br from-amber-500 to-orange-600 group">
-            <div className="absolute inset-0 bg-[url('/src/assets/images/banners/led-bg.png')] bg-cover bg-center mix-blend-overlay opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
-            
-            <div className="relative h-full flex flex-col justify-center items-center text-center p-8">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">LED FX</h2>
-              <p className="text-white/80 mb-6">Illuminate your audio experience with dynamic effects.</p>
-              <Button>Discover</Button>
-            </div>
+          <div className=" overflow-hidden shadow-lg">
+            <img 
+              src={rightImage} 
+              alt="Featured promotion" 
+              className="w-full h-auto object-cover"
+            />
           </div>
         </div>
       </div>
-    </section>)}
+    </section>
+  );
+};
 
-    export default FeaturedSection
+export default FeaturedSection;

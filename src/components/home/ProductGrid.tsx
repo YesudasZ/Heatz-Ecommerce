@@ -119,7 +119,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ title }) => {
   }, [currentSlide]);
 
   return (
-    <section className="py-12 bg-black text-white">
+    <section className="py-6 bg-black text-white">
       <div className="container max-w-[65%] mx-auto px-4">
         {title && (
           <h2 className="text-2xl md:text-3xl font-bold mb-8">{title}</h2>
