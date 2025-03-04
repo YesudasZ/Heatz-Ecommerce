@@ -1,201 +1,3 @@
-// import React from "react";
-
-// const Footer: React.FC = () => {
-//   return (
-//     <footer className="bg-heatz-dark pt-16 pb-8">
-//       <div className="container mx-auto">
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-//           <div>
-//             <div className="text-2xl font-bold text-heatz-green mb-4">
-//               HEATZ
-//             </div>
-//             <p className="text-white/70 text-sm mb-6">
-//               Heatz® is a registered brand of Ashtelgroup. It is registered in
-//               different countries including Saudi Arabia and UAE, Especialy in
-//               the middle east. Heatz® is well known for its variety and quality
-//               of products launched in every seasons.
-//             </p>
-//           </div>
-
-//           <div>
-//             <h3 className="font-bold mb-4">Mob Acc</h3>
-//             <ul className="space-y-2 text-white/70">
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Earphones
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Cables
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Adapters
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Power Bank
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Batteries
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Car Charger
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Holders
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Speakers
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Smartwatches{" "}
-//                 </a>
-//               </li>
-//             </ul>
-//           </div>
-
-//           <div>
-//             <h3 className="font-bold mb-4">Com Acc</h3>
-//             <ul className="space-y-2 text-white/70">
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Earphones
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Cables
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Adapters
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Power Bank
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Batteries
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Car Charger
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Holders
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Speakers
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Smartwatches{" "}
-//                 </a>
-//               </li>
-//             </ul>
-//           </div>
-
-//           <div>
-//             <h3 className="font-bold mb-4">Help</h3>
-//             <ul className="space-y-2 text-white/70">
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Contact Us
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   FAQs
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Shipping & Returns
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Payment Methods
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Track Your Order
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   About Us
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Delivery Policy
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Cancellation Policy
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Return Policy
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Privacy Policy
-//                 </a>
-//               </li>
-//               <li>
-//                 <a href="#" className="hover:text-white">
-//                   Terms and Conditions
-//                 </a>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-//         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-white/50 text-sm">
-//           <div>
-//             Copyright © 2024 Heatz - All rights reserved. | Developed by
-//             AdAgency ( Technologies. )
-//           </div>
-//           <div className="flex space-x-6 mt-4 md:mt-0"></div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
-
-
 import React from "react";
 
 const Footer: React.FC = () => {
@@ -203,7 +5,6 @@ const Footer: React.FC = () => {
     <footer className="bg-black pt-16 pb-8">
       <div className="container max-w-[65%] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-20 mb-10">
-          {/* Logo and Description Section */}
           <div className="col-span-3">
             <div className="mb-4">
               <img 
@@ -218,8 +19,6 @@ const Footer: React.FC = () => {
               the middle east. Heatz® is well known for its variety and quality
               of products launched in every seasons.
             </p>
-            
-            {/* Email Subscription */}
             <div className="mt-8">
               <div className="relative text-[#565656]">
               <input 
@@ -249,8 +48,6 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-
-          {/* Mob Acc Column */}
           <div className="col-span-1 mt-10">
             <h3 className="text-white text-xs mb-5">Mob Acc</h3>
             <ul className=" text-[#565656] ">
@@ -301,8 +98,6 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-
-          {/* Com Acc Column */}
           <div className="col-span-1 mt-10">
             <h3 className="text-white text-xs mb-5 ">Com Acc</h3>
             <ul className=" text-[#565656]">
@@ -353,8 +148,6 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-
-          {/* Help Column */}
           <div className="col-span-1 mt-10">
             <h3 className="text-white text-xs mb-5">Help</h3>
             <ul className=" text-[#565656]">
@@ -415,15 +208,12 @@ const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-        </div>
-        
-        {/* Copyright Section */}
-       
+        </div>   
       </div>
       <div className=" border-t flex justify-center border-[#565656] pt-6 text-gray-500 text-sm">
           <div className="text-center md:text-left">
             Copyright © 2024 Heatz - All rights reserved. | Developed by
-            <span className="text-white"> AdAgency ( Technologies. )</span>
+            <span className="text-white text-xs font-thin"> AdAgency ( Technologies. )</span>
           </div>
         </div>
     </footer>
