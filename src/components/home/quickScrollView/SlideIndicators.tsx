@@ -5,7 +5,6 @@ interface SlideIndicatorsProps {
   currentIndex: number
   setCurrentIndex: (index: number) => void
 }
-
 const SlideIndicators: React.FC<SlideIndicatorsProps> = ({ itemCount, currentIndex, setCurrentIndex }) => {
   return (
     <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">

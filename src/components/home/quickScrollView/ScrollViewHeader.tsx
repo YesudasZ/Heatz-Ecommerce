@@ -1,8 +1,6 @@
 import type React from "react"
 
 const ScrollViewHeader: React.FC = () => {
-
-
   return (
     <div className="max-w-[65%] mx-auto px-4 md:px-8 pt-16">
       <div className="flex flex-col md:flex-row justify-between items-start">

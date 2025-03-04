@@ -13,9 +13,6 @@ const ScrollViewSlider: React.FC<ScrollViewSliderProps> = ({
   prevSlide,
 }) => {
   const isMobile = useMediaQuery(breakpoints.mobile)
-
-
-  // Adjust button positioning based on screen size
   const buttonLeftClass = isMobile ? "left-4" : "left-80"
   const buttonRightClass = isMobile ? "right-4" : "right-80"
 

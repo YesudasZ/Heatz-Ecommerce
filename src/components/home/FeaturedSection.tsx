@@ -1,10 +1,8 @@
 import React from 'react';
-
 interface FeaturedSectionProps {
   leftImage: string;
   rightImage: string;
 }
-
 const FeaturedSection: React.FC<FeaturedSectionProps> = ({ leftImage, rightImage }) => {
   return (
     <section className=" bg-heatz-dark">

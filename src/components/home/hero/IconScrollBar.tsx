@@ -1,22 +1,18 @@
 import type React from "react"
 import useMediaQuery, { breakpoints } from "../../../hooks/useMediaQuery"
-
 interface IconProps {
   src: string
   alt: string
 }
-
 const Icon: React.FC<IconProps> = ({ src, alt }) => (
   <div className="flex-shrink-0 mx-2">
     <img src={src || "/placeholder.svg"} alt={alt} className="h-8 w-8 md:h-10 md:w-10" />
   </div>
 )
-
 const IconScrollBar: React.FC = () => {
   const isMobile = useMediaQuery(breakpoints.mobile)
   const isTablet = useMediaQuery(breakpoints.tablet)
 
-  // Determine how many icons to show based on screen size
   const iconCount = isMobile ? 6 : isTablet ? 8 : 12
 
   return (

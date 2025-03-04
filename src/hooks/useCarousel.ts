@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect, useRef, useCallback } from "react"
 
 interface UseCarouselProps {
@@ -24,7 +22,6 @@ const useCarousel = ({ itemsCount, autoPlayInterval = 3000, initialIndex = 0 }: 
     setCurrentIndex(index)
   }, [])
 
-  // Auto-play functionality
   useEffect(() => {
     if (autoPlayInterval <= 0) return
 
@@ -35,7 +32,6 @@ const useCarousel = ({ itemsCount, autoPlayInterval = 3000, initialIndex = 0 }: 
     return () => clearInterval(interval)
   }, [autoPlayInterval, goToNext])
 
-  // Scroll to current index
   useEffect(() => {
     if (carouselRef.current) {
       const scrollAmount = currentIndex * (carouselRef.current.offsetWidth / itemsCount)

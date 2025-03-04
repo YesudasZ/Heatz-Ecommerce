@@ -1,14 +1,10 @@
 import type React from "react"
 import type { ScrollViewItem } from "./types"
-
-
 interface SlideItemProps {
   item: ScrollViewItem
   index: number
 }
-
 const SlideItem: React.FC<SlideItemProps> = ({ item, index }) => {
-
 
   return (
     <div className="min-w-full">
