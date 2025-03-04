@@ -1,7 +1,10 @@
 import React from "react";
 import useMediaQuery from "../../../hooks/useMediaQuery";
 import IconButton from "../IconButton";
-
+import searchicon from '../../../assets/images/icons/searchicon.png';
+import wishlisticon from '../../../assets/images/icons/wishlisticon.png';
+import carticon from '../../../assets/images/icons/carticon.png'
+import profile from '../../../assets/images/icons/profile.png'
 interface IconButtonsProps {
   toggleMobileMenu: () => void;
   isMobileMenuOpen: boolean;
@@ -18,25 +21,25 @@ const IconButtons: React.FC<IconButtonsProps> = ({
     <div className="flex items-center space-x-2 md:space-x-3">
       {isDesktop && !isTablet && (
         <IconButton 
-          icon="searchicon" 
+          icon={searchicon} 
           alt="Search" 
           className="hidden md:block" 
         />
       )}
       
-      <IconButton icon="carticon" alt="Cart" />
+      <IconButton icon={carticon} alt="Cart" />
       
       {isDesktop && (
         <>
           {!isTablet && (
             <IconButton 
-              icon="wishlisticon" 
+              icon={wishlisticon} 
               alt="Wishlist" 
               className="hidden md:block" 
             />
           )}
           <IconButton 
-            icon="profile" 
+            icon={profile} 
             alt="Profile" 
             className="hidden md:block" 
           />

@@ -1,5 +1,6 @@
 import type React from "react"
 import useMediaQuery, { breakpoints } from "../../../hooks/useMediaQuery"
+import headset from '../../../assets/images/products/headseticon.png'
 interface IconProps {
   src: string
   alt: string
@@ -24,7 +25,7 @@ const IconScrollBar: React.FC = () => {
           backdrop-blur-md mx-4 md:mx-8 mb-8 p-4 flex justify-between items-center overflow-x-auto"
         >
           {[...Array(iconCount)].map((_, index) => (
-            <Icon key={index} src="/src/assets/images/products/headseticon.png" alt="Headset" />
+            <Icon key={index} src={headset} alt="Headset" />
           ))}
         </div>
       </div>

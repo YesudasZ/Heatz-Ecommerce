@@ -36,7 +36,7 @@ const IconButton: React.FC<IconButtonProps> = ({
       aria-label={alt}
     >
       <img
-        src={`/src/assets/images/icons/${icon}.png`}
+        src={icon}
         alt={alt}
         className={sizeClasses[getSize()]}
       />

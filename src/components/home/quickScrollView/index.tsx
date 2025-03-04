@@ -3,6 +3,8 @@ import { useState, useEffect, useCallback } from "react"
 import ScrollViewHeader from "./ScrollViewHeader"
 import ScrollViewSlider from "./ScrollViewSlider"
 import type { ScrollViewItem } from "./types"
+import image1 from '../../../assets/images/scroll/scrollimage1.png';
+import image2 from '../../../assets/images/scroll/scrollimage2.png';
 
 const QuickLinkScrollView: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -12,20 +14,20 @@ const QuickLinkScrollView: React.FC = () => {
       id: 1,
       heading1: "Boost up your",
       heading2: "Audio experience.",
-      imagePath: "/src/assets/images/scroll/scrollimage1.png",
+      imagePath: image1,
     },
     {
       id: 2,
       heading1: "Queen's Edition",
       heading2: "Smartwatch",
-      imagePath: "/src/assets/images/scroll/scrollimage2.png",
+      imagePath: image2,
     },
     {
       id: 3,
       heading1: "Boost up your",
       heading2: "Audio experience.",
-      imagePath: "/src/assets/images/scroll/scrollimage1.png",
-    },
+      imagePath: image1,
+    }, 
   ]
 
   const nextSlide = useCallback(() => {

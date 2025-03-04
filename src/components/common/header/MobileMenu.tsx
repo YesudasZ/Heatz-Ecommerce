@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { navigationLinks } from "../../../data/navigationLinks";
 import IconButton from "../IconButton";
+import searchicon from '../../../assets/images/icons/searchicon.png';
+import wishlisticon from '../../../assets/images/icons/wishlisticon.png';
+import profile from '../../../assets/images/icons/profile.png'
 
 interface MobileMenuProps {
   closeMenu: () => void;
@@ -47,9 +50,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ closeMenu }) => {
           ))}
 
           <div className="flex space-x-6 md:space-x-8 mt-6 md:mt-8">
-            <IconButton icon="searchicon" alt="Search" size="lg" />
-            <IconButton icon="wishlisticon" alt="Wishlist" size="lg" />
-            <IconButton icon="profile" alt="Profile" size="lg" />
+            <IconButton icon={searchicon} alt="Search" size="lg" />
+            <IconButton icon={wishlisticon} alt="Wishlist" size="lg" />
+            <IconButton icon={profile} alt="Profile" size="lg" />
           </div>
         </nav>
       </div>

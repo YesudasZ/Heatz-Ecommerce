@@ -1,4 +1,5 @@
 import React from "react";
+import send from '../../../assets/images/logos/sendlogo.png'
 
 const Newsletter: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const Newsletter: React.FC = () => {
           aria-label="Subscribe to newsletter"
         >
           <img 
-            src="/src/assets/images/logos/sendlogo.png" 
+            src={send}
             alt="Send" 
             className="text-white h-3 md:h-4"
           />

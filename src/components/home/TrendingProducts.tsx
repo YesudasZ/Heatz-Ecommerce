@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
+import tproduct1 from '../../assets/images/trendingproducts/tproduct1.png';
+import tproduct2 from '../../assets/images/trendingproducts/tproduct2.png';
+import tproduct3 from '../../assets/images/trendingproducts/tproduct3.png';
+
 
 const TrendingProducts: React.FC = () => {
   const [scrollIndex, setScrollIndex] = useState(0);
   const productImages = [
-    "src/assets/images/trendingproducts/tproduct1.png",
-    "src/assets/images/trendingproducts/tproduct2.png",
-    "src/assets/images/trendingproducts/tproduct3.png",
+   tproduct1,tproduct2,tproduct3
   ];
 
   const allProducts = Array(4).fill(productImages).flat(); 
